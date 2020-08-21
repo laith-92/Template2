@@ -1,0 +1,652 @@
+/* Start Global */
+
+.container{
+    width: 1200px;
+    margin: auto;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* End Global */
+
+/* Start Nav-Bar */
+
+.navbar{
+    font-size: 18px;
+    height: 0; /* to make navbar transparent */
+    position: relative;
+    z-index: 2;
+}
+
+.navbar .brand{
+    width: 40%;
+}
+
+.navbar .brand h2{
+    color: #1ABC9C;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: italic;
+}
+
+.navbar .links{
+    width: 60%;
+    margin-top: 15px; 
+}
+
+.navbar .links li{
+    display: inline-block;
+    padding: 10px 0;
+    margin: 0 20px;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar .links li.active a,
+.navbar .links li a:hover{
+    color: #1ABC9A;
+    border-bottom: 1.6px solid #1ABC9C;
+}
+
+.navbar .links li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #FFF;
+}
+
+/* End Nav-Bar */
+
+/*Start Header*/
+
+.header{
+    background-image: url(../images/1.jpg);
+    background-size: cover;
+    background-position: 0;
+    position: relative; /* to make overlay take all space */
+} 
+
+
+.header .overlay{
+    background-color: rgba(0,0,0,0.3);
+    position: absolute; /* to make overlay full screen */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.header .bx-viewport{
+	height: 100% !important;
+}
+
+.header .bx-wrapper{
+	border: 0;
+	box-shadow: none;
+	background: none;
+	text-align: center;
+	height: 100%;
+}
+
+.header .bxslider li{
+	display: block;	
+}
+
+.header .bxslider li h2{
+	font-size: 80px;
+	font-weight: bold;
+	color: #FFF;
+	margin-top: 0;
+	margin-bottom: 20px;
+	text-transform: capitalize;
+}
+
+.header .bxslider li span{
+	color: #1abc9c;
+	font-family: 'Pacifico', cursive;
+	font-weight: bolder;
+}
+
+.header .bxslider li p{
+	color: #FFF;
+	font-size: 25px;
+	text-transform: capitalize;
+}
+
+/*Design Modal*/
+.header .bxslider li button{
+	border: 2px solid #1ABC9C;
+	background-color: #1ABC9C;
+	color: #FFF;
+	width: 140px;
+	padding: 10px 10px;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.header .bxslider li button:hover{
+	border-bottom-right-radius: 7px;
+	color: #D4CCCC;
+	transition-duration: 1s;
+	transition-delay: 0.1s;
+	cursor: pointer;
+}
+
+.header .bxslider li button:focus{outline: none}
+
+.header .bxslider li .modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.header .bxslider li .modal .modal-content{
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+.header .bxslider li .modal .modal-content .modal-header{
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.header .bxslider li .modal .modal-content .modal-body {padding: 2px 16px;}
+
+
+.header .bxslider li .modal .modal-content .modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+
+.header .bxslider li .modal .modal-content .modal-header .close{
+	color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.header .bxslider li .modal .modal-content .modal-header .close:hover,
+.header .bxslider li .modal .modal-content .modal-header .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+
+
+/*End Design Modal*/
+
+/*End Header*/  
+
+/*Start About Us*/
+
+.about{
+	padding: 40px 20px;
+}
+
+.about .item{
+	width: 50%;
+	margin-top: 10px;
+}
+
+.about .item .special-heading:after{
+	width: 83px;
+}
+
+.about .item .special-heading:hover:after{
+	width: 128px;
+	transition-duration: 1s;
+	transition-delay: 0.1s;
+}
+
+.about .item h2{
+    color: #2f2e2f;
+    font-size: 34px;
+    font-weight: normal;
+    text-transform: capitalize;
+	margin: 0 0 50px;
+}
+
+.about .item .item-inner{
+	float: left;
+	width: 25%;
+	margin-top: 25px;
+}
+
+.about .item .item-inner:first-of-type{
+	margin-right: 170px;
+}
+
+.about .item .item-inner .info{
+	margin: 0;
+	padding: 0;
+}
+
+.about .item .item-inner i{
+	color: #1ABC9C;
+	width: 130px;
+}
+
+.about .item .item-inner .info h3{
+	color: #333;
+	font-weight: lighter;
+	font-size: 20px;
+	text-transform: capitalize;
+	margin-top: 30px;
+	text-align: center;
+}
+
+.about .item .item-inner .info p{
+	color: #333;
+	line-height: 1.5;
+	font-weight: lighter;
+	font-size: 16px;
+	text-align: justify;
+}
+
+.about .pic{
+	width: 50%;
+    margin-top: 10px;
+}
+
+.about .pic img{
+	width: 100%;
+}
+
+/*End About Us*/
+
+/* Start Menu */
+
+.menu h2{
+	color: #2f2e2f;
+	font-weight: normal;
+	font-size: 34px;
+	text-transform: capitalize;
+}
+
+.menu .special-heading:after{
+	width: 50px;
+}
+
+.menu .special-heading:hover:after{
+	width: 140px;
+	transition-duration: 1s;
+	transition-delay: 0.1s;
+}
+
+.menu ul{margin-top: 50px;}
+
+.menu ul li{
+	display: inline-block;
+	border: 2px solid #D4CCCC;
+	border-bottom-right-radius: 7px;
+	color: #D4CCCC;
+	list-style-type: none;
+	padding: 10px;
+	width: 80px;
+	margin-right: 7px;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.menu ul li.active{
+	background-color: #1ABC9C;
+	color: #FFF;
+	border: 2px solid #1ABC9C;
+}
+
+.menu ul li:hover{
+	background-color: #1ABC9C;
+	color: #FFF;
+	border: 2px solid #1ABC9C;
+	transition-duration: 1s;
+	transition-delay: 0.1s;
+	cursor: pointer;
+}
+
+.menu .gallary{
+	margin-top: 60px;
+}
+
+.menu .gallary .row > div{
+	float: left;
+	width: 32.6666%;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.menu .gallary .row > div:nth-child(2){
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+.menu .gallary .row > div img{
+	width: 100%;
+}
+
+.menu .gallary .row > div .over{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	line-height: 392px;
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFF;
+	background-color: rgba(0,0,0,0.1);
+	display: none;
+}
+
+.menu .gallary .row > div .heart{
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	color: #1ABC9C;
+	display: none;
+}
+
+.menu .gallary .row > div:hover .over,
+.menu .gallary .row > div:hover .heart{
+	display: block;
+}
+
+.menu .gallary .mix{display: none;}
+
+/* End Menu */
+
+/* Start Testimonials */
+
+.testi{
+	background-image: url(../images/lform.jpg);
+	background-size: cover;
+	height: 400px;
+	text-align: center;
+	position: relative;
+	padding: 80px 0;
+}
+
+.testi .t-overlay{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+}
+
+.testi h2{
+	font-size: 40px;
+	color: #EEE;
+	margin: 80px 0 50px;
+	text-transform: capitalize;
+}
+
+.testi .slider > div{
+	display: none;
+}
+
+.testi .slider .active{
+	display: block;
+}
+
+.testi q{
+	font-size: 20px;
+	color: #D0D0D0;
+	display: block;
+}
+
+/* End Testimonials */
+
+
+/*Start My Framework*/
+
+/* Start reservation */
+
+.reservation{
+	overflow: hidden;
+	padding: 50px 0;
+}
+
+.reservation h2{
+	color: #2f2e2f;
+	font-weight: normal;
+	font-size: 34px;
+	text-transform: capitalize;
+}
+
+.reservation .special-heading:after{
+	width: 105px;
+}
+
+.reservation .special-heading:hover:after{
+	width: 227px;
+	transition-duration: 1s;
+	transition-delay: 0.1s;
+}
+
+.reservation .form{
+	width: 60%;
+    margin: 20px 0 20px 0
+}
+
+
+
+.reservation .form .row .col-50{
+	float: left;
+	width: 30%;
+	margin-bottom: 15px
+}
+
+.reservation .form .row .col-50:first-of-type{
+	margin-right: 160px
+}
+
+.reservation .form input[type="text"],.reservation .form input[type="email"],.reservation .form input[type="tel"]{
+	width: 350px;
+	padding: 15px 15px;
+	border: 1px solid #ccc;
+	
+}
+
+.reservation .form input[type="text"],.reservation .form input[type="tel"],.reservation .form input[type="email"],.reservation .form .inputlist:focus{
+	outline: none
+}
+
+.reservation .form .inputlist{
+	width: 350px;
+	padding: 15px 15px;
+	border: 1px solid #ccc;
+}
+
+.reservation .form .row button{
+	border: 2px solid #1ABC9C;
+	background-color: #1ABC9C;
+	color: #FFF;
+	width: 140px;
+	padding: 10px 10px;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.reservation .form .row button:hover{
+	border-bottom-right-radius: 7px;
+	color: #D4CCCC;
+	transition-duration: 1s;
+	transition-delay: 0.1s;
+	cursor: pointer;
+}
+
+.reservation .form .row button:focus{outline: none}
+
+.reservation .form .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.reservation .hourly{
+	width: 35%;
+	margin-left: 5%;
+}
+
+.reservation .hourly h3{
+    color: #555;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: capitalize;
+	text-align: center
+}
+
+.reservation .hourly hr:first-of-type{
+	margin-top: 30px;
+	margin-bottom: 30px
+}
+
+.reservation .hourly hr:not(:first-of-type){
+	border: 0.5px solid #2f2e2f
+}
+
+.reservation .hourly p{
+	padding: 5px 0;
+	color: #2f2e2f;
+	line-height: 1.5;
+	font-family: "museo-sans", helvetica, sans-serif;
+	font-size: 17px
+}
+
+/* End reservation */
+
+.clearfix{clear: both;}
+
+.special-heading{
+	position: relative;
+}
+
+.special-heading:after{
+	content: "";
+	display: block;
+	position: absolute;
+	border: 0.6px solid #1ABC9C;
+	top: 40px;
+	left: 0;
+}
+
+.seperator{
+    border: 1px solid #EEE;
+}
+
+/*Test*/
+
+
+/*Test*/
+
+/*
+.bttn{
+    background: none;
+    border: 3px solid #2DCC70;
+    padding: 10px 30px;
+    color: #2DCC70;
+    font-weight: bold;
+    font-size: 19px;
+    text-transform: uppercase;
+}
+*/
+
+.fl-left{float: left;}
+
+
+
+/*
+
+p{
+    color: #2f2e2f;
+    line-height: 1.5;
+	font-family: "museo-sans", helvetica, sans-serif;
+	font-size: 18px;
+}
+
+
+h2{
+    color: #555;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+h3{
+    color: #555;
+    font-weight: lighter;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.txt-center{text-align: center;}
+*/
+/*End My Framework*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
